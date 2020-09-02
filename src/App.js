@@ -1,23 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Home from './Components/Home/Home';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import NoMatch from './Components/NoMatch/NoMatch';
+import CountryDetail from './Components/CountryDetail/CountryDetail';
+import Time from './Components/Time/Time';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       
+       <Router>
+         <Switch>
+
+           <Route exact path="/">
+            <Home />
+           </Route>
+
+            <Route path="/home">
+              <Home />
+            </Route>
+
+            <Route path="/time">
+              <Time />
+            </Route>
+
+            <Route path='/area/:countryDetail'>
+                <CountryDetail />
+            </Route>
+
+           <Route path="*">
+            <NoMatch />
+           </Route>
+           
+         </Switch>
+       </Router>
       </header>
     </div>
   );

@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.countryFlag{
+    width: 200px;
+    height: 160px;
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.countryStyle{
+   width: 400px;
+   padding: 20px;
+   margin: 20px;
+   box-shadow: 10px 10px 40px gray;
+   text-transform: uppercase;
+   border-radius: 8px;
+   float: left;
+    margin-left: 55px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+}
+.countryFlag,
+.countryStyle h1,
+.countryStyle h3{
+    margin-top: 15px;
+}
+.styleBtn {
+        padding: 15px 28px;
+        border-radius: 8px;
+        margin-top: 15px;
+        background: none;
+        color: white;
+        transition: .5s;
+        box-shadow: 5px 5px 10px rgb(90, 89, 89);
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+}
+.styleBtn:hover{
+    box-shadow: none;
+}
+small{
+    font-size: 16px
+}
+/* .anime{
+    animation: animate 3s linear infinite;
+    -webkit-animation: animate 3s linear infinite;
+}
+@keyframes animate {
+    to{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+    from{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+} */
